@@ -44,7 +44,7 @@ class _OnBoardingState extends State<OnBoarding> {
                     _opacityValue = 1.0;
                   });
                 },
-                child: Text("Passer", style: CartoonBoxTheme.subTitle(),),
+                child: Text("Passer", style: MonGayTheme.subTitle(),),
               )),
 
           Positioned(
@@ -107,14 +107,14 @@ class _OnBoardingState extends State<OnBoarding> {
               children: [
                 Text(
                   onBoardingData[current]['title'],
-                  style: CartoonBoxTheme.title(
+                  style: MonGayTheme.title(
                   ),
                     textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 10),
                 Text(
                   onBoardingData[current]['subtitle'],
-                  style: CartoonBoxTheme.subTitle(),
+                  style: MonGayTheme.subTitle(),
                   textAlign: TextAlign.center,
                 ),
               ],
@@ -149,8 +149,8 @@ class _OnBoardingState extends State<OnBoarding> {
                     },
                     child: Row(
                       children: [
-                        Text(current < onBoardingData.length - 1 ? "SUIVANT": "TERMINÉ", style: CartoonBoxTheme.subTitle(textColor: secondaryColor)),
-                        const Icon(Icons.arrow_forward_outlined, color: secondaryColor, size: 14,)
+                        Text(current < onBoardingData.length - 1 ? "SUIVANT": "TERMINÉ", style: MonGayTheme.subTitle(textColor: primaryOpaqueColor)),
+                        const Icon(Icons.arrow_forward_outlined, color: primaryOpaqueColor, size: 14,)
                       ],
                     )
                 ),
